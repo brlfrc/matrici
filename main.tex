@@ -203,86 +203,84 @@ Gli spazi vettoriali possono essere definiti anche con le matrici.
 \\ Infatti i vettori base possono essere scritti come matrici.
 \\ prendiamo come esempio lo spazio a 4 dimensioni:
 \\ un qualsiasi vettore $\vec{v}(1,2,3,4)$ può essere scritto come la somma dei vettori linearmente indipendenti:
-\\ (1,2,3,4)=1(1,0,0,0)+2(0,1,0,0)+3(0,0,1,0)+4(0,0,0,1)
-\\ Oppure lo stesso vettore può essere scritto come matrice e come la somma delle matrici linearmenti indipendeti che compongono lo spazio:
+\begin{quote} \centering (1,2,3,4)=1(1,0,0,0)+2(0,1,0,0)+3(0,0,1,0)+4(0,0,0,1)
+\end{quote}
+Oppure lo stesso vettore può essere scritto come matrice e come la somma delle matrici linearmenti indipendeti che compongono lo spazio:
 \\
-\\ $\vec{v}
+\begin{quote} \centering $\vec{v}
 =\left[\begin{matrix}1& 2\\ 3 & 4\end{matrix}\right]
 = 1*\left[\begin{matrix}1& 0 \\ 0 & 0\end{matrix}\right]
 + 2*\left[\begin{matrix}0 & 1 \\ 0 & 0\end{matrix}\right]
 + 3*\left[\begin{matrix}0 & 0 \\ 1 & 0\end{matrix}\right]
 + 4*\left[\begin{matrix}0 & 0 \\ 0 & 1\end{matrix}\right]
-$
+$\end{quote}
  	
 \subsection{Operatore lineare}
 Un operatore lineare, o trasformazione lineare, è una funzione che associa due spazi nello stesso campo, cioè una funzione che conserva l'operazione di somma di vettori e di moltiplicazione per uno scalare.
 \\ Perciò se T è un operatore lineare:
-\\ T: $\vec{v} 
+\begin{quote} \centering T: $\vec{v} 
 $
 \begin{large} $\rightarrow$ \end{large} 
 $ \vec{u}
-$
-\\ questo vale solo se valgono le seguenti prorpietà:
+$\end{quote}
+questo vale solo se valgono le seguenti prorpietà:
 \begin{itemize}
 \item Additività
-\\ T($\vec{v_{1}} + \vec{v_{2}})= T(\vec{v_{1}})+T(\vec{v{2}}) 
-$
+\begin{quote} \centering $T(\vec{v_{1}} + \vec{v_{2}})= T(\vec{v_{1}})+T(\vec{v{2}}) 
+$\end{quote}
 \item Omogeneità
-\\ T($\alpha v)=\alpha $ T(v)
+\begin{quote} \centering $T(\alpha v)=\alpha T(v) $
+\end{quote}
 \end{itemize}
 
 \subsubsection{Trasformazioni con matrici quadrate}
 Se la trasformazione porta uno spazio in se stesso, l'operatore sarà una matrice quadrata.
-\\ T:
-$R^n$
+\\ $T:R^n$
 \begin{large} $\rightarrow$ \end{large} 
 $R^n$
 allora T sarà una matrice quadrata.
 \\Riportiamo un esempio:
 \\Consideriamo lo spazio vettoriale: V= $\left[\begin{matrix}a& b\\ c & d\end{matrix}\right]
 $
-\\ l'operatore T: V \begin{large} $\rightarrow$ \end{large} V
-\\ la matrice M= $\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]
+\\ l'operatore $T: V$ \begin{large} $\rightarrow$ \end{large} $V$
+\\ la matrice $M= \left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]
 $
-\\ A\begin{large} $\rightarrow$ \end{large} T(A) = MA
+\\ $A$\begin{large} $\rightarrow$ \end{large} $T(A) = MA$
 \\ studio come si modificano le matrici base che chiamo $E_{1} (1,0,0,0) E_{2} (0,1,0,0) E_{3} (0,0,1,0) E_{4} (0,0,0,1)$
 \\
-\\ $T(E_{1})= E_{1} *M= \left[\begin{matrix}1& 0\\ 0 & 0\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}1& 0 \\ 3 & 0\end{matrix}\right]= 1E_{1}+3E_{3}
+\begin{quote} \centering $T(E_{1})= E_{1} *M= \left[\begin{matrix}1& 0\\ 0 & 0\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}1& 0 \\ 3 & 0\end{matrix}\right]= 1E_{1}+3E_{3}
 $
-\\
-\\ $T(E_{2})= E_{2} *M= \left[\begin{matrix}0& 1\\ 0 & 0\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}0& 1 \\ 0 & 3\end{matrix}\right]= 1E_{2}+3E_{4}
+\bigskip \\ $T(E_{2})= E_{2} *M= \left[\begin{matrix}0& 1\\ 0 & 0\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}0& 1 \\ 0 & 3\end{matrix}\right]= 1E_{2}+3E_{4}
 $
-\\
-\\ $T(E_{3})= E_{3} *M= \left[\begin{matrix}0& 0\\ 1 & 0\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}2& 0 \\ 4 & 0\end{matrix}\right]= 2E_{1}+4E_{3}
+\bigskip \\ $T(E_{3})= E_{3} *M= \left[\begin{matrix}0& 0\\ 1 & 0\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}2& 0 \\ 4 & 0\end{matrix}\right]= 2E_{1}+4E_{3}
 $
-\\
-\\ $T(E_{4})= E_{4} *M= \left[\begin{matrix}0& 0\\ 0 & 1\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}0& 2\\ 0 & 4\end{matrix}\right]= 2E_{2}+4E_{4}
-$
-\\
-\\Perciò posso determinare $[T]=\left[\begin{matrix}1& 0&2&0\\ 0 & 1& 0 & 2\\3&0&4&0\\0&3&0&4\end{matrix}\right]
-$
-\\Ultima osservazione che faccio è che se lo spazio iniziale è un 2*2 l'operatore lineare sarà una matrice di un ordine superione in questo caso 4.
+\bigskip \\ $T(E_{4})= E_{4} *M= \left[\begin{matrix}0& 0\\ 0 & 1\end{matrix}\right]\left[\begin{matrix}1& 2 \\ 3 & 4\end{matrix}\right]= \left[\begin{matrix}0& 2\\ 0 & 4\end{matrix}\right]= 2E_{2}+4E_{4}
+$\end{quote}
+Perciò posso determinare 
+\begin{quote} \centering $[T]=\left[\begin{matrix}1& 0&2&0\\ 0 & 1& 0 & 2\\3&0&4&0\\0&3&0&4\end{matrix}\right]
+$ \end{quote}
+Ultima osservazione che faccio è che se lo spazio iniziale è un 2*2 l'operatore lineare sarà una matrice di un ordine superione in questo caso 4.
 
 \section{Rotazioni e numeri complessi}
 In quest'ultima sezione analizziamo come le rotazioni nel piano cartesiano e i numeri complessi sono legati.
 \subsection{Rotazioni nel piano cartesiano}
 La rotazione in due dimensione può essere considerata una trasformazione lineare e perciò può essere rappresentata con un operatore lineare.
-\\ La matrice in questione è: $\left[\begin{matrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{matrix}\right]
-$
+\\ La matrice in questione è: 
+\begin{quote} \centering $\left[\begin{matrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{matrix}\right]
+$\end{quote}
 \subsubsection{Esempio}
 Cosideriamo il punto $P(x,y)= x(1,0)+y(0,1)$
 \\ i vettori base nelle rotazioni di angolo theta si trasformano: 
-\\ (1,0) \begin{large} $\rightarrow$ \end{large} $(\cos\theta, \sin\theta)
-$
-\\ (0,1) \begin{large} $\rightarrow$ \end{large} $(-\sin\theta, \cos\theta)
-$
-\\ Il trasformato di P diventa:
-\\ $T(P)=T(x,y)=x(\cos\theta,\sin\theta)+y(-\sin\theta,\cos\theta)= (x\cos\theta-y\sin\theta,x\sin\theta+y\cos\theta)
-$
-\\
-\\ Si ottiene lo stesso risultato considerando l'operatore lineare e il punto P come matrice:
-\\ $T(P)= M*P=\left[\begin{matrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{matrix}\right]\left[\begin{matrix}x\\ y\end{matrix}\right]=(x\cos\theta-y\sin\theta,x\sin\theta+y\cos\theta)
-$
+\begin{quote} \centering (1,0) \begin{large} $\rightarrow$ \end{large} $(\cos\theta, \sin\theta)
+$ \\
+(0,1) \begin{large} $\rightarrow$ \end{large} $(-\sin\theta, \cos\theta)
+$ \end{quote}
+Il trasformato di P diventa:
+\begin{quote} \centering $T(P)=T(x,y)=x(\cos\theta,\sin\theta)+y(-\sin\theta,\cos\theta)= (x\cos\theta-y\sin\theta,x\sin\theta+y\cos\theta)
+$\end{quote}
+Si ottiene lo stesso risultato considerando l'operatore lineare e il punto P come matrice:
+\begin{quote} \centering $T(P)= M*P=\left[\begin{matrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{matrix}\right]\left[\begin{matrix}x\\ y\end{matrix}\right]=(x\cos\theta-y\sin\theta,x\sin\theta+y\cos\theta)
+$\end{quote}
 \subsubsection{Isometria}
 La trasformazione è isometrica e si può verificarlo calcolando il determinante dell'operatore:
 \\Determinante$\left[\begin{matrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{matrix}\right]= (\cos\theta)(\cos\theta)-(-\sin\theta)(\sin\theta)= \cos^2\theta+\sin^2\theta=1
