@@ -108,9 +108,8 @@ $\end{quote}
 \section{Matrici quadrate}
 Nell’insieme delle matrici importanti sono quelle che hanno lo stesso numero di righe e di colonne che sono chiamate matrici quadrate.
 \\
-\\
-$\left[\begin{matrix}a_{11} & a_{12} & a_{13} & ... & a_{1n} \\ a_{21} & a{22} & a_{23} & ... & a_{2n} \\ ... & ... & ... & ... & ...\\ a_{n1} & a_{n2} & a_{n3} & ... & a_{nn}\end{matrix}\right]
-$
+\begin{quote} \centering $\left[\begin{matrix}a_{11} & a_{12} & a_{13} & ... & a_{1n} \\ a_{21} & a{22} & a_{23} & ... & a_{2n} \\ ... & ... & ... & ... & ...\\ a_{n1} & a_{n2} & a_{n3} & ... & a_{nn}\end{matrix}\right]
+$\end{quote}
 
 \subsection{Proprietà}
 Le matrici quadrate dello stesso ordine (ovvero con lo stesso numero di colonne e righe) sono conformabili per addizione e per moltiplicazioni. Alle proprietà delle operazioni precedentemente elencate si aggiungono:
@@ -118,30 +117,28 @@ Le matrici quadrate dello stesso ordine (ovvero con lo stesso numero di colonne 
 \item Sia il prodotto sia la somma saranno operazioni interne al sottoinsieme delle matrici quadrate di ordine n
 \item Esiste un elemento neutro per la moltiplicazione, tale che $AU = A$ e $UA = A$
 \\
-\\
+\begin{quote} \centering
 $\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
 * \left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
 =\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
 $
-\\
-\\
+\bigskip \\
 $\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
 *\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
 =\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
-$
+$\end{quote}
 \item Esiste un elemento inverso della moltiplicazione, tale che $A A' = U$ e $A' A = U$
 \\
-\\
+\begin{quote} \centering
 $\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
 \left[\begin{matrix}1/a & 0 & \\ 0& 1/d\end{matrix}\right]
 =\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
 $
-\\
-\\
+\bigskip \\
 $\left[\begin{matrix}1/a & 0 & \\ 0& 1/d\end{matrix}\right]
 * \left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
 =\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
-$
+$\end{quote}
 \end{itemize}
 
 \subsection{Campo}
@@ -151,14 +148,14 @@ In matematica un campo è una struttura algebrica in cui quale si definiscono du
 Ad ogni matrice quadrata è associato un determinante, che se è diverso da zero garantisce l’esistenza della inversa della matrice.
 \\ Consideriamo la matrice quadrata di ordine n:
 \\
-\\
+\begin{quote} \centering
 $\left[\begin{matrix}a_{11} & a_{12} & a_{13} & ... & a_{1n} \\ a_{21} & a{22} & a_{23} & ... & a_{2n} \\ ... & ... & ... & ... & ...\\ a_{n1} & a_{n2} & a_{n3} & ... & a_{nn}\end{matrix}\right]
-$
-\\
-\\
+$ \end{quote}
+
 e un prodotto di n dei suoi elementi: 
-\\$a_{1j_{1}} a_{1j{2}} a_{3j_{3}} ... a {nj_{n}}$
-\\
+\\\begin{quote} \centering
+$a_{1j_{1}} a_{1j{2}} a_{3j_{3}} ... a {nj_{n}}$
+\end{quote}
 gli elementi devono essere scelti in modo che un elemento, e uno solo, provenga da ciascuna riga e uno solo provenga da ciascuna colonna.
 \\ Permutando i secondi pedici, quelli della colonna, si trovano tutti i gruppi.
 \\ Poi si sommano tutti questi gruppi. Se si è eseguito un numero pari di permutazioni per trovare il gruppo nella somma questo avrà segno positivo, se invece le permutazioni sono dispari il gruppo avrà segno negativo.
@@ -167,18 +164,16 @@ gli elementi devono essere scelti in modo che un elemento, e uno solo, provenga 
 \\ Determinante di $\left[\begin{matrix}a_{11} & a_{12} \\ a_{21} & a{22} \end{matrix}\right]
 = (1,2) a_{11} a_{22} + (2,1; una permutazione) a_{12}a_{21}= a_{11} a_{22} - a_{12}a_{21}
 $
-\\
-\\ Determinate di $\left[\begin{matrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{matrix}\right] = 
-\\ (1,2,3) a_{11}a_{22}a_{33} + (1,3,2) a_{11}a_{23}a_{32} + (2,1,3) a_{12}a_{21}a_{33} + (2,3,1) a_{12}a_{23}a_{31} + (3,1,2) a_{13}a_{21}a_{32} + (3,2,1) a_{13}a_{22}a_{31} =
-\\ a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} 
-$
+\begin{quote} \centering
+Determinate di $\left[\begin{matrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{matrix}\right] = (1,2,3) a_{11}a_{22}a_{33} + (1,3,2) a_{11}a_{23}a_{32} + (2,1,3) a_{12}a_{21}a_{33} + (2,3,1) a_{12}a_{23}a_{31} + (3,1,2) a_{13}a_{21}a_{32} + (3,2,1) a_{13}a_{22}a_{31} = a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} 
+$\end{quote}
 
 \section{Vettori}
 I vettori possono essere considerati delle matrici:
 \\
-\\
+\begin{quote} \centering
 $\vec{v}(1,2,3) =\left[\begin{matrix} 1 & 2 & 3\end{matrix}\right]
-$
+$\end{quote}
 \subsection{Spazi vettoriali}
 Uno spazio vettoriale è una struttura algebrica composta da un campo (i cui elementi sono detti scalri), un insieme (i cui elemeti sono detti vettori) e due operazioni, somma e moltiplicazione.
 \\ Spazi vettoriali sono il piano cartesiano e il piano a tre dimensioni:
@@ -187,14 +182,13 @@ Uno spazio vettoriale è una struttura algebrica composta da un campo (i cui ele
 \includegraphics[width=8cm]{piano_cartesiano.png}
 \includegraphics[width=6cm]{piano_tre_dimensioni.png}
 \\
-\\
 \subsubsection{Dimensione e vettori base di uno spazio}
 La dimensione di uno spazio vettoriale si definisce come il numero minimo di vettori linearmente indipendenti l'uno con l'altro necessari per necessari per creare quello spazio:
 \\ Peril piano cartesiano i due vettori linearmente indipendeti sono: $\vec{j}(1,0) e \vec{i}(0,1) $
 \\ Per il piano a tre dimensioni: $ \vec{j}(1,0,0), \vec{i}(0,1,0), \vec{k}(0,0,1) $
 \\ Questi vettori sono chiamati vettori base.
-\\Due vettori sono linearmente indipendeti se la loro combinazione lineare vale 0 se e solo se i due coefficienti che moltiplicano i due vettori sono nulli:
-$\vec{v_{1}}e \vec{v_{2}} $ sono linearmente indipendenti alllora $\alpha\vec{v_{1}}*\beta\vec{v_{2}}=0$ solo per $\alpha=\beta=0 $.
+\\Due vettori sono linearmente indipendeti se la loro combinazione lineare vale 0 se e solo se i coefficienti che moltiplicano i vettori sono nulli:
+$\vec{v_{1}}$ e $\vec{v_{2}} $ sono linearmente indipendenti alllora $\alpha\vec{v_{1}}*\beta\vec{v_{2}}=0$ solo per $\alpha=\beta=0 $.
 \\ un esempio sono i vettori (2,3,5) e (3,7,8) \\
 \[\begin{cases}
 2\alpha + 3\beta=0\\
@@ -362,4 +356,4 @@ $
 - https://bit.ly/2tyzkMm 27/06/2018\\
 - https://bit.ly/2Kt8cFf 27/06/2018
 
-\end{document}
+\end{document}	
