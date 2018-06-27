@@ -20,30 +20,30 @@
 \begin{document}
 \maketitle
 
-
-
 \section{Introduzione}
 
 La matematica è il linguaggio con cui la fisica si esprime, ogni teorema e ogni legge sono enunciati attraverso i simboli che i matematici hanno creato.
-Classicamente la branca della matematica di cui si avvalevano i fisici era l’analisi. Il grande padre della fisica, Isaac Newton prima di creare le sue leggi, riformula le nozioni matematiche del tempo, introducendo concetti rivoluzionari nel campo dell’analisi. Anche la cinematica, la termologia e l’elettromagnetismo sono teorie che si basano su questa matematica.
-Negli ultimi anni dell’Ottocento e nei primi del Novecento la fisica attraversa un grande momento di rinnovamento e compaiono teorie rivoluzionare capaci di cambiarla per sempre. Nasce l’idea di quanto con Max Planck, poi la relatività di Eistein e la meccanica matriciale di Heisenberg e Born.
-La grande intuizione di quest’ultimi è quella di cambiare radicalmente il punto di vista da cui si guarda il mondo della fisica; infatti quella che viene sviluppata sull’isola di Helgoland è una fisica che sfrutta un linguaggio diverso: l’algebra lineare. I due fisici tedeschi fondano la loro teoria sulle matrici, per questa ragione viene chiamata “meccanica matriciale.
+\\Classicamente la branca della matematica di cui si avvalevano i fisici era l’analisi. Il grande padre della fisica, Isaac Newton, prima di creare le sue leggi, riformula le nozioni matematiche del tempo introducendo concetti rivoluzionari nel campo dell’analisi. Anche la cinematica, la termologia e l’elettromagnetismo sono teorie che si basano su questa matematica.
+\\Negli ultimi anni dell’Ottocento e nei primi del Novecento la fisica attraversa un grande momento di rinnovamento e compaiono teorie rivoluzionare capaci di cambiarla per sempre. Nasce l’idea di quanto con Max Planck, poi la relatività di Eistein e la meccanica matriciale di Heisenberg e Born.
+\\La grande intuizione di quest’ultimi è quella di cambiare radicalmente il punto di vista da cui si guarda il mondo della fisica; infatti quella che viene sviluppata sull’isola di Helgoland è una fisica che sfrutta un linguaggio diverso: l’algebra lineare. I due fisici tedeschi fondano la loro teoria sulle matrici, per questa ragione viene chiamata “meccanica matriciale.
 \\
-\\Concludo questa breve introduzione dicendo che personalmente trovo molto affascinante che un gruppo di numeri disposti quasi casualmente siano in grado di descrivere con tanta cura la realtà. Il mistero diventa ancora più interessante se si considera il fatto che teorie fisiche sfruttano matrici che coinvolgono numeri immaginari ottenendo risultati ottimi (un esempio sono le matrici che Pauli sfrutta per completare il suo “principio di sovrapposizione”).
+\\Concludo questa breve introduzione dicendo che personalmente trovo molto affascinante che un gruppo di numeri all'apparenza disposti quasi casualmente siano in grado di descrivere con tanta cura la realtà. Il mistero diventa ancora più interessante se si considera il fatto che teorie fisiche sfruttano matrici che coinvolgono numeri immaginari ottenendo risultati ottimi (un esempio sono le matrici che Pauli sfrutta per completare il suo “principio di sovrapposizione”).
 
 \section{Le matrici}
 
 \subsection{Presentazione del lavoro}
-Quello che intendo presentare è un primo approccio all’algebra lineare e in particolare alle matrici, partendo dal definire cosa sia una matrice e illustrando le proprietà più semplici. Per questa parte della tesina faccio riferimento a tre lezioni tenute durante l’anno dal professor Bonancina e al testo “Matrici” della collana Schaum di Frank Ayres.
+Quello che intendo presentare è un primo approccio all’algebra lineare e in particolare alle matrici, partendo dal definire cosa sia una matrice e illustrando le proprietà più semplici. Per questa parte della tesina faccio riferimento a tre lezioni tenute durante l’anno dal professor Bonancina e al testo {\it Matrici} della collana Schaum di Frank Ayres.
 
 \subsection{Definizione}
 
-una matrice è una successione di numeri disposti in colonna e in riga:
-\\
-\\
-	$\left[\begin{matrix}a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a{22} & ... & a_{2n} \\ ... & ... & ... & ...\\ a_{m1} & a_{m2} & ... & a_{mn}\end{matrix}\right]
-$
-
+\vspace*{\fill} 
+\begin{quote} 
+\centering 
+Una matrice è una successione di numeri disposti in colonna e in riga:
+\bigskip \\
+	$\left[\begin{matrix}a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a{22} & ... & a_{2n} \\ ... & ... & ... & ...\\ a_{m1} & a_{m2} & ... & a_{mn}\end{matrix}\right]$
+\end{quote}
+\vspace*{\fill}
 
 \section{Operazioni}
 Nell'insieme delle matrici vengono definite le operazioni di somma e moltiplicazione.
@@ -59,10 +59,10 @@ $
 \subsubsection{Proprietà}
 Questa funzione gode di queste proprietà:
 \begin{itemize}
-\item Commutativa, $A + B = B + A $
-\item Associativa,$ A + (B + C) = (A + B) + C$
+\item Commutativa, $A + B = B + A$
+\item Associativa, $A + (B + C) = (A + B) + C$
 \item La funzione è interna al sottoinsieme delle matrici con ordine pari a quello delle sommate.
-
+\end{itemize}
 \subsubsection{Elemento neutro}
 Esiste la matrice che fra da elemento neutro, la matrice zero: 
 \\
@@ -70,7 +70,6 @@ Esiste la matrice che fra da elemento neutro, la matrice zero:
 $\left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right] + \left[\begin{matrix}0 & 0 \\ 0 & 0\end{matrix}\right] = \left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right]
 $
 
-\end{itemize}
 \subsection{Moltiplicazione}
 Il prodotto fra due matrici è definito solo se le due matrici sono conformabili per la moltiplicazione, ovvero quando il numero di colonne della prima matrice è uguale al numero di righe della seconda. Il prodotto procede riga per colonna: ogni elemento della riga viene moltiplicato per il corrispondete elemento della colonna, sommando poi i prodotti.
 \\
@@ -112,7 +111,6 @@ $
 \\
 \\ $ \left[\begin{matrix} 2 & 3 & 4\end{matrix}\right] * \left[\begin{matrix}0 \\ -3 \\ 4 \end{matrix}\right] = \left[\begin{matrix}2*0 + 3*(-3) + 4*4 \end{matrix}\right]= \left[\begin{matrix}7\end{matrix}\right]
 $
-
 \end{itemize}
 
 \section{Matrici quadrate}
@@ -123,25 +121,21 @@ $\left[\begin{matrix}a_{11} & a_{12} & a_{13} & ... & a_{1n} \\ a_{21} & a{22} &
 $
 
 \subsection{Proprietà}
-Le matrici quadrate dello stesso ordine(ovvero con lo stesso numero di colonne e righe) sono conformabili per addizione e per moltiplicazioni. Alle proprietà delle operazioni precedentemente elencate si aggiungono:
+Le matrici quadrate dello stesso ordine (ovvero con lo stesso numero di colonne e righe) sono conformabili per addizione e per moltiplicazioni. Alle proprietà delle operazioni precedentemente elencate si aggiungono:
 \begin{itemize}
 \item Sia il prodotto sia la somma saranno operazioni interne al sottoinsieme delle matrici quadrate di ordine n
 \item Esiste un elemento neutro per la moltiplicazione, tale che $AU = A$ e $UA = A$
 \\
 \\
 $\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
-$
-* $\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
-$
-= $\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
+* \left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
+=\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
 $
 \\
 \\
 $\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
-$
-* $\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
-$
-= $\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
+*\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
+=\left[\begin{matrix}a & b & \\ c & d\end{matrix}\right]
 $
 \item Esiste un elemento inverso della moltiplicazione, tale che $A A' = U$ e $A' A = U$
 \\
@@ -178,13 +172,13 @@ gli elementi devono essere scelti in modo che un elemento, e uno solo, provenga 
 \\ Poi si sommano tutti questi gruppi. Se si è eseguito un numero pari di permutazioni per trovare il gruppo nella somma questo avrà segno positivo, se invece le permutazioni sono dispari il gruppo avrà segno negativo.
 \\ Determinante per matrici di ordine 2 e 3:
 \\
-\\ Determinante di $\left[\begin{matrix}a_{11} & a_{12}  \\ a_{21} & a{22} \end{matrix}\right]
+\\ Determinante di $\left[\begin{matrix}a_{11} & a_{12} \\ a_{21} & a{22} \end{matrix}\right]
 = (1,2) a_{11} a_{22} + (2,1; una permutazione) a_{12}a_{21}= a_{11} a_{22} - a_{12}a_{21}
 $
 \\
 \\ Determinate di $\left[\begin{matrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{matrix}\right] = 
 \\ (1,2,3) a_{11}a_{22}a_{33} + (1,3,2) a_{11}a_{23}a_{32} + (2,1,3) a_{12}a_{21}a_{33} + (2,3,1) a_{12}a_{23}a_{31} + (3,1,2) a_{13}a_{21}a_{32} + (3,2,1) a_{13}a_{22}a_{31} =
-\\ a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} -  a_{12}a_{21}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} 
+\\ a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} 
 $
 
 \section{Vettori}
