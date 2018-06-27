@@ -283,55 +283,49 @@ Si ottiene lo stesso risultato considerando l'operatore lineare e il punto P com
 $\end{quote}
 \subsubsection{Isometria}
 La trasformazione è isometrica e si può verificarlo calcolando il determinante dell'operatore:
-\\Determinante$\left[\begin{matrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{matrix}\right]= (\cos\theta)(\cos\theta)-(-\sin\theta)(\sin\theta)= \cos^2\theta+\sin^2\theta=1
-$
-\\Tutte le trasformazioni che presentano il determinante uguale a uno conservano le misure.
+\begin{quote} \centering Determinante$\left[\begin{matrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{matrix}\right]= (\cos\theta)(\cos\theta)-(-\sin\theta)(\sin\theta)= \cos^2\theta+\sin^2\theta=1
+$\end{quote}
+Tutte le trasformazioni che presentano il determinante uguale a uno conservano le misure.
 \subsection{Numeri complessi}
 Ogni rotazione può essere pensata come un numero complesso. In partricolare ogni rotazione risulta il prodotto di un numero complesso di modulo 1 con un altro numero complesso (che corrisponde al punto).
 \subsubsection{Verifica}
 Consideriamo un numero complesso u definito:
-\\$u=\cos\theta+\textit{i}\sin\theta
-$
-\\verifichiamo che il modulo di u=1
-\\$ |u|=\sqrt{\cos^2\theta+\sin^2\theta}=1
-$
-\\Ora prendiamo un altro numero complesso v:
-\\ $v=x+\textit{i}y 
-$
-\\Calcoliamo il prodotto:
-\\ $uv=(\cos\theta+\textit{i}\sin\theta)(x+\textit{i}y)=(x\cos\theta-y\sin\theta)+\textit{i}(x\sin\theta+y\cos\theta)
-$
-\\Il risultato è ciò che si ottiene con le rotazioni.
+\begin{quote} \centering $u=\cos\theta+\textit{i}\sin\theta
+$\end{quote}
+verifichiamo che il modulo di u=1
+\begin{quote} \centering$ |u|=\sqrt{\cos^2\theta+\sin^2\theta}=1
+$\end{quote}
+Ora prendiamo un altro numero complesso v:
+\begin{quote} \centering$v=x+\textit{i}y 
+$\end{quote}
+Calcoliamo il prodotto:
+\begin{quote} \centering$uv=(\cos\theta+\textit{i}\sin\theta)(x+\textit{i}y)=(x\cos\theta-y\sin\theta)+\textit{i}(x\sin\theta+y\cos\theta)
+$\end{quote}
+Il risultato è ciò che si ottiene con le rotazioni.
 \subsubsection{numeri complessi e matrici}
 Proviamo a relazionare i numeri complessi e le matrici.
 \\Prendiamo il numero u precedente:
-\\$u=1*\cos\theta+\textit{i}\sin\theta
+\begin{quote} \centering$u=1*\cos\theta+\textit{i}\sin\theta
+$\end{quote}
+Scriviamo 1 come la matrice unitaria e associamo a \textit{i} un matrice, la caratteristica di quest'ultima matrice è che se elevata al quadrato il risultato è meno la matrice unitaria:
+\\Infatti:
+\begin{quote} \centering $\textit{i}^2=-1
+$\end{quote}
+Verifico che questa matrice è:
+\begin{quote} \centering $\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
 $
-\\Scriviamo 1 come la matrice unitaria e associamo a \textit{i} un matrice, la caratteristica di quest'ultima matrice è che se elevata al quadrato il risultato è meno la matrice unitaria:
-\\Infatti: $\textit{i}^2=-1$
-\\Verifico che questa matrice è:
-\\
-\\$\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
-$
-\\
-\\$\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
-$
+\bigskip \\
 $\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
-$
-= $\left[\begin{matrix}-1&0 \\ 0&-1 \end{matrix}\right]
-$
-=$-\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
-$
-\\
-\\
+\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
+= \left[\begin{matrix}-1&0 \\ 0&-1 \end{matrix}\right]
+=-\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]
+$\end{quote}
 Il numero u perciò diventa:
-\\
-\\$u=\cos\theta\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]+\sin\theta\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
-$
-\\Perciò un nuemero complesso può essere scritto in generale nella forma:
-\\
-\\ $a+b\sqrt{-1}=a \left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]+ b\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
-$
+\begin{quote} \centering$u=\cos\theta\left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]+\sin\theta\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
+$\end{quote}
+Perciò un nuemero complesso può essere scritto in generale nella forma:
+\begin{quote} \centering $a+b\sqrt{-1}=a \left[\begin{matrix}1&0 \\ 0&1 \end{matrix}\right]+ b\left[\begin{matrix}0&-1\\ 1&0 \end{matrix}\right]
+$\end{quote}
 \subsection{Rotazioni e matrici}
 Allora possiamo concludere che una matrice di ordine due descrive le rotazioni nel paino cartesiano.
 \section{Conclusioni}
@@ -339,19 +333,13 @@ Nelle conslusioni consideriamo un spazio vettoriale $R^4$ descritto da quattro m
 \\Questo campo ragglio dei vettori chiamati quaternioni. I quaternioni furono un invenzione di un matematico inglese, Hamilton. In particolare un quaternione puro è in grado di descrivere una rotazione nello spazio $R^3$, come un numero immaginario descrive una rotazione nello spazio $R^2$.Per questa ragione i quaternioni vennero sfruttati da Wolfgang Pauli per descrivere i vettori di spin e formulare il suo principio di esclusione.
 \\
 Le matrici di Pauli sono:
-\\
-\\$\sigma_{x}=\left[\begin{matrix}0&1\\ 1&0 \end{matrix}\right] \sigma_{y}=\left[\begin{matrix}0&-\textit{i}\\ \textit{i}&0 \end{matrix}\right] \sigma_{z}=\left[\begin{matrix}1&0\\ 0&-1 \end{matrix}\right]
-$
-\\
-\\
-\\
-\\
-\\
+\begin{quote} \centering$\sigma_{x}=\left[\begin{matrix}0&1\\ 1&0 \end{matrix}\right] \sigma_{y}=\left[\begin{matrix}0&-\textit{i}\\ \textit{i}&0 \end{matrix}\right] \sigma_{z}=\left[\begin{matrix}1&0\\ 0&-1 \end{matrix}\right]
+$\end{quote}
 
 \section{Bibliografia e sitografia}
 - Frank Ayres Jr., Teoria ed applicazioni delle Matrici, collana Schaum, 1974\\
-- https://bit.ly/2N5RAES 27/06/2018\\
-- https://bit.ly/2tyzkMm 27/06/2018\\
-- https://bit.ly/2Kt8cFf 27/06/2018
+- Definizione operatore: https://bit.ly/2N5RAES 27/06/2018\\
+- Immagine piano cartesiano: https://bit.ly/2tyzkMm 27/06/2018\\
+- Immagine piano tridimensionale: https://bit.ly/2Kt8cFf 27/06/2018
 
 \end{document}	
