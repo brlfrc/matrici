@@ -41,7 +41,8 @@ Quello che intendo presentare è un primo approccio all’algebra lineare e in p
 \centering 
 Una matrice è una successione di numeri disposti in colonna e in riga:
 \bigskip \\
-	$\left[\begin{matrix}a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a{22} & ... & a_{2n} \\ ... & ... & ... & ...\\ a_{m1} & a_{m2} & ... & a_{mn}\end{matrix}\right]$
+$\left[\begin{matrix}a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a{22} & ... & a_{2n} \\ ... & ... & ... & ...\\ a_{m1} & a_{m2} & ... & a_{mn}\end{matrix}\right]
+$
 \end{quote}
 \vspace*{\fill}
 
@@ -51,10 +52,8 @@ Nell'insieme delle matrici vengono definite le operazioni di somma e moltiplicaz
 \subsection{Somma}
 La somma può essere effettuata solo da matrice conformabili per addizione, ovvero dello stesso ordine con ugual numero di colonne e righe. La matrice risultate avrà lo stesso ordine di quelle sommate e per ogni posizione la somma degli elementi presenti in quella posizione nelle matrici di partenza. Come esemplifica la seguente immagine:
 \\
-\\
-$\left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right] + \left[\begin{matrix}5 & 3 \\ 2 & 6\end{matrix}\right] = \left[\begin{matrix} 2+5 & 4+3 \\ 1+2 & 3+6\end{matrix}\right] = \left[\begin{matrix}7 & 7 \\ 3 & 9\end{matrix}\right]
-$
-\\
+\begin{quote} \centering $\left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right] + \left[\begin{matrix}5 & 3 \\ 2 & 6\end{matrix}\right] = \left[\begin{matrix} 2+5 & 4+3 \\ 1+2 & 3+6\end{matrix}\right] = \left[\begin{matrix}7 & 7 \\ 3 & 9\end{matrix}\right]
+$\end{quote}
 
 \subsubsection{Proprietà}
 Questa funzione gode di queste proprietà:
@@ -63,23 +62,20 @@ Questa funzione gode di queste proprietà:
 \item Associativa, $A + (B + C) = (A + B) + C$
 \item La funzione è interna al sottoinsieme delle matrici con ordine pari a quello delle sommate.
 \end{itemize}
+
 \subsubsection{Elemento neutro}
 Esiste la matrice che fra da elemento neutro, la matrice zero: 
 \\
-\\
-$\left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right] + \left[\begin{matrix}0 & 0 \\ 0 & 0\end{matrix}\right] = \left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right]
-$
+\begin{quote} \centering $\left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right] + \left[\begin{matrix}0 & 0 \\ 0 & 0\end{matrix}\right] = \left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right]
+$\end{quote}
 
 \subsection{Moltiplicazione}
 Il prodotto fra due matrici è definito solo se le due matrici sono conformabili per la moltiplicazione, ovvero quando il numero di colonne della prima matrice è uguale al numero di righe della seconda. Il prodotto procede riga per colonna: ogni elemento della riga viene moltiplicato per il corrispondete elemento della colonna, sommando poi i prodotti.
 \\
-\\
-$ \left[\begin{matrix} 2 & 3 & 4\end{matrix}\right] * \left[\begin{matrix}1 \\ -1 \\ 2 \end{matrix}\right] = \left[\begin{matrix}2*1 + 3*(-1) + 4*2 \end{matrix}\right]= \left[\begin{matrix}7\end{matrix}\right]
-$
-\\
-\\
-$\left[\begin{matrix} 1 & 2 & 3 \\ 4 & 5 & 6\end{matrix}\right] * \left[\begin{matrix}1 \\ 1 \\ 1 \end{matrix}\right] = \left[\begin{matrix} 1 + 2 + 3\\ 4 + 5 + 6 \end{matrix}\right]= \left[\begin{matrix}7 \\ 15 \end{matrix}\right]
-$
+\begin{quote} \centering $\left[\begin{matrix} 2 & 3 & 4\end{matrix}\right] * \left[\begin{matrix}1 \\ -1 \\ 2 \end{matrix}\right] = \left[\begin{matrix}2*1 + 3*(-1) + 4*2 \end{matrix}\right]= \left[\begin{matrix}7\end{matrix}\right]
+$\end{quote}
+\begin{quote} \centering $\left[\begin{matrix} 1 & 2 & 3 \\ 4 & 5 & 6\end{matrix}\right] * \left[\begin{matrix}1 \\ 1 \\ 1 \end{matrix}\right] = \left[\begin{matrix} 1 + 2 + 3\\ 4 + 5 + 6 \end{matrix}\right]= \left[\begin{matrix}7 \\ 15 \end{matrix}\right]
+$\end{quote}
 \subsubsection{Proprietà}
 Questa funzione gode di queste proprietà:
 \begin{itemize}
