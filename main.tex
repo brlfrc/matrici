@@ -87,26 +87,22 @@ Questa funzione gode di queste proprietà:
 \subsubsection{Altre considerazioni}
 Oltre alle proprietà elencate precedentemente per la funzione vale:
 \begin{itemize}
-\item $AB = 0$ non implica necessariamente che A o B siano la matrice zero
-\\
-\\ $ \left[\begin{matrix} 1 & 3 & 2\end{matrix}\right] * \left[\begin{matrix}-1 \\ 1 \\ -1 \end{matrix}\right] = \left[\begin{matrix}1*(-1) + 3*(1) + 2*(-1) \end{matrix}\right]= \left[\begin{matrix}0\end{matrix}\right]
+\item $AB = 0$ non implica necessariamente che A o B siano la matrice zero\\
+\begin{quote} \centering $ \left[\begin{matrix} 1 & 3 & 2\end{matrix}\right] * \left[\begin{matrix}-1 \\ 1 \\ -1 \end{matrix}\right] = \left[\begin{matrix}1*(-1) + 3*(1) + 2*(-1) \end{matrix}\right]= \left[\begin{matrix}0\end{matrix}\right]
+$\end{quote}
+\item AB non è uguale BA, in generale\\
+\begin{quote} \centering $ \left[\begin{matrix} 2 & 1 \\ -1 & 2\end{matrix}\right] * \left[\begin{matrix}3 & 1 \\ 1& 2\end{matrix}\right] = \left[\begin{matrix}6 + 1 & 2+2 \\ (-3)+2 & 4 - 1\end{matrix}\right]= \left[\begin{matrix}7 & 4 \\ -1 & 3 \end{matrix}\right]
 $
-\item AB non è uguale BA, in generale
-\\
-\\ $ \left[\begin{matrix} 2 & 1 \\ -1 & 2\end{matrix}\right] * \left[\begin{matrix}3 & 1 \\ 1& 2\end{matrix}\right] = \left[\begin{matrix}6 + 1 & 2+2 \\ (-3)+2 & 4 - 1\end{matrix}\right]= \left[\begin{matrix}7 & 4 \\ -1 & 3 \end{matrix}\right]
-$
-\\
-\\
-\\ $\left[\begin{matrix}3 & 1 \\ 1& 2\end{matrix}\right] * \left[\begin{matrix} 2 & 1 \\ -1 & 2\end{matrix}\right] = \left[\begin{matrix}6 - 1 & 3+2\\ 2-2 & 4 + 1\end{matrix}\right]= \left[\begin{matrix} 5 & 5 \\ 0 & 5\end{matrix}\right]
-$
+\bigskip \\
+$\left[\begin{matrix}3 & 1 \\ 1& 2\end{matrix}\right] * \left[\begin{matrix} 2 & 1 \\ -1 & 2\end{matrix}\right] = \left[\begin{matrix}6 - 1 & 3+2\\ 2-2 & 4 + 1\end{matrix}\right]= \left[\begin{matrix} 5 & 5 \\ 0 & 5\end{matrix}\right]
+$\end{quote}
 \item $AB = AC$ non implica necessariamente che B sia uguale a C
 \\
-\\ $ \left[\begin{matrix} 2 & 3 & 4\end{matrix}\right] * \left[\begin{matrix}1 \\ -1 \\ 2 \end{matrix}\right] = \left[\begin{matrix}2*1 + 3*(-1) + 4*2 \end{matrix}\right]= \left[\begin{matrix}7\end{matrix}\right]
+\begin{quote} \centering $ \left[\begin{matrix} 2 & 3 & 4\end{matrix}\right] * \left[\begin{matrix}1 \\ -1 \\ 2 \end{matrix}\right] = \left[\begin{matrix}2*1 + 3*(-1) + 4*2 \end{matrix}\right]= \left[\begin{matrix}7\end{matrix}\right]
 $
-\\
-\\
-\\ $ \left[\begin{matrix} 2 & 3 & 4\end{matrix}\right] * \left[\begin{matrix}0 \\ -3 \\ 4 \end{matrix}\right] = \left[\begin{matrix}2*0 + 3*(-3) + 4*4 \end{matrix}\right]= \left[\begin{matrix}7\end{matrix}\right]
-$
+\bigskip \\
+$ \left[\begin{matrix} 2 & 3 & 4\end{matrix}\right] * \left[\begin{matrix}0 \\ -3 \\ 4 \end{matrix}\right] = \left[\begin{matrix}2*0 + 3*(-3) + 4*4 \end{matrix}\right]= \left[\begin{matrix}7\end{matrix}\right]
+$\end{quote}
 \end{itemize}
 
 \section{Matrici quadrate}
