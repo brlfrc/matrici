@@ -24,8 +24,8 @@
 
 La matematica è il linguaggio con cui la fisica si esprime, ogni teorema e ogni legge sono enunciati attraverso i simboli che i matematici hanno creato.
 \\Classicamente la branca della matematica di cui si avvalevano i fisici era l’analisi. Il grande padre della fisica, Isaac Newton, prima di creare le sue leggi, riformula le nozioni matematiche del tempo introducendo concetti rivoluzionari nel campo dell’analisi. Anche la cinematica, la termologia e l’elettromagnetismo sono teorie che si basano su questa matematica.
-\\Negli ultimi anni dell’Ottocento e nei primi del Novecento la fisica attraversa un grande momento di rinnovamento e compaiono teorie rivoluzionare capaci di cambiarla per sempre. Nasce l’idea di quanto con Max Planck, poi la relatività di Eistein e la meccanica matriciale di Heisenberg e Born.
-\\La grande intuizione di quest’ultimi è quella di cambiare radicalmente il punto di vista da cui si guarda il mondo della fisica; infatti quella che viene sviluppata sull’isola di Helgoland è una fisica che sfrutta un linguaggio diverso: l’algebra lineare. I due fisici tedeschi fondano la loro teoria sulle matrici, per questa ragione viene chiamata “meccanica matriciale.
+\\Negli ultimi anni dell’Ottocento e nei primi del Novecento la fisica attraversa un grande momento di rinnovamento e compaiono teorie rivoluzionare capaci di cambiarla per sempre. Nasce l’idea di \textit{quanto} con Max Planck, la \textit{relatività} di Eistein e la \textit{meccanica matriciale} di Heisenberg e Born.
+\\La grande intuizione di quest’ultimi due scienziati è quella di cambiare radicalmente il punto di vista da cui si guarda il mondo della fisica, sfruttando una diversa branca della matematatica: l'algebra lineare. Infatti la teoria che viene sviluppata sull’isola di Helgoland si basa sulle matrici, per questa ragione viene chiamata “meccanica matriciale.
 \\
 \\Concludo questa breve introduzione dicendo che personalmente trovo molto affascinante che un gruppo di numeri all'apparenza disposti quasi casualmente siano in grado di descrivere con tanta cura la realtà. Il mistero diventa ancora più interessante se si considera il fatto che teorie fisiche sfruttano matrici che coinvolgono numeri immaginari ottenendo risultati ottimi (un esempio sono le matrici che Pauli sfrutta per completare il suo “principio di sovrapposizione”).
 
@@ -58,13 +58,13 @@ $\end{quote}
 \subsubsection{Proprietà}
 Questa funzione gode di queste proprietà:
 \begin{itemize}
-\item Commutativa, $A + B = B + A$
-\item Associativa, $A + (B + C) = (A + B) + C$
+\item \textit{Proprietà commutativa}, $A + B = B + A$
+\item \textit{Proprietà associativa}, $A + (B + C) = (A + B) + C$
 \item La funzione è interna al sottoinsieme delle matrici con ordine pari a quello delle sommate.
 \end{itemize}
 
 \subsubsection{Elemento neutro}
-Esiste la matrice che fra da elemento neutro, la matrice zero: 
+Esiste la matrice che fa da elemento neutro, la matrice zero: 
 \\
 \begin{quote} \centering $\left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right] + \left[\begin{matrix}0 & 0 \\ 0 & 0\end{matrix}\right] = \left[\begin{matrix}2 & 4 \\ 1 & 3\end{matrix}\right]
 $\end{quote}
@@ -79,10 +79,10 @@ $\end{quote}
 \subsubsection{Proprietà}
 Questa funzione gode di queste proprietà:
 \begin{itemize}
-\item Prima proprietà distributiva, $A*(B + C) = AB + BC$
-\item Seconda proprietà distributiva, $(A + B)*C = AC +BC$
-\item Proprietà associativa, $A*(BC) = (AB)*C$
-\item Non necessariamente la funzione è definita nello stesso sottoinsieme di matrici di ordine pari a quelle che sto moltiplicando.
+\item \textit{Prima proprietà distributiva}, $A*(B + C) = AB + BC$
+\item \textit{Seconda proprietà distributiva}, $(A + B)*C = AC +BC$
+\item \textit{Proprietà associativa}, $A*(BC) = (AB)*C$
+\item La funzione non è sempre interna al sottoinsieme delle matrici con ordine pari a quelle che sto moltiplicando.
 \end{itemize}
 \subsubsection{Altre considerazioni}
 Oltre alle proprietà elencate precedentemente per la funzione vale:
@@ -114,7 +114,7 @@ $\end{quote}
 \subsection{Proprietà}
 Le matrici quadrate dello stesso ordine (ovvero con lo stesso numero di colonne e righe) sono conformabili per addizione e per moltiplicazioni. Alle proprietà delle operazioni precedentemente elencate si aggiungono:
 \begin{itemize}
-\item Sia il prodotto sia la somma saranno operazioni interne al sottoinsieme delle matrici quadrate di ordine n
+\item Sia il prodotto che la somma sono operazioni interne al sottoinsieme delle matrici quadrate di ordine n
 \item Esiste un elemento neutro per la moltiplicazione, tale che $AU = A$ e $UA = A$
 \\
 \begin{quote} \centering
@@ -142,7 +142,7 @@ $\end{quote}
 \end{itemize}
 
 \subsection{Campo}
-In matematica un campo è una struttura algebrica in cui quale si definiscono due operazione interne, somma e prodotto. Avendo perciò definito nel sottoinsieme "matrici quadrate dello stesso ordine" le operazioni somma e prodotto possiamo chiamare questo insieme campo.
+In matematica un campo è una struttura algebrica nella quale si definiscono due operazione interne, somma e prodotto. Avendo perciò definito nel insieme "matrici quadrate dello stesso ordine" le operazioni somma e prodotto possiamo chiamare questo \textit{campo}.
 
 \subsection{Determinante}
 Ad ogni matrice quadrata è associato un determinante, che se è diverso da zero garantisce l’esistenza della inversa della matrice.
@@ -157,15 +157,20 @@ e un prodotto di n dei suoi elementi:
 $a_{1j_{1}} a_{1j{2}} a_{3j_{3}} ... a {nj_{n}}$
 \end{quote}
 gli elementi devono essere scelti in modo che un elemento, e uno solo, provenga da ciascuna riga e uno solo provenga da ciascuna colonna.
-\\ Permutando i secondi pedici, quelli della colonna, si trovano tutti i gruppi.
-\\ Poi si sommano tutti questi gruppi. Se si è eseguito un numero pari di permutazioni per trovare il gruppo nella somma questo avrà segno positivo, se invece le permutazioni sono dispari il gruppo avrà segno negativo.
-\\ Determinante per matrici di ordine 2 e 3:
+\\ Si trovano tutti i gruppi permutando i \textit{secondi pedici}, quelli della colonna.
+\\ Si sommano tutti questi gruppi.
+\\ Se si è eseguito un numero pari di permutazioni per trovare il gruppo nella somma questo avrà segno positivo, se invece le permutazioni sono dispari il gruppo avrà segno negativo.
+\\ Cerchiamo di chiarire attraverso due esempi e calcoliamo il determinante per matrici di ordine 2 e 3:
 \\
 \\ Determinante di $\left[\begin{matrix}a_{11} & a_{12} \\ a_{21} & a{22} \end{matrix}\right]
 = (1,2) a_{11} a_{22} + (2,1; una permutazione) a_{12}a_{21}= a_{11} a_{22} - a_{12}a_{21}
 $
 \begin{quote} \centering
-Determinate di $\left[\begin{matrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{matrix}\right] = (1,2,3) a_{11}a_{22}a_{33} + (1,3,2) a_{11}a_{23}a_{32} + (2,1,3) a_{12}a_{21}a_{33} + (2,3,1) a_{12}a_{23}a_{31} + (3,1,2) a_{13}a_{21}a_{32} + (3,2,1) a_{13}a_{22}a_{31} = a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} 
+Determinate di $\left[\begin{matrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{matrix}\right] =$
+\bigskip \\ 
+$(1,2,3) a_{11}a_{22}a_{33} + (1,3,2) a_{11}a_{23}a_{32} + (2,1,3) a_{12}a_{21}a_{33} + (2,3,1) a_{12}a_{23}a_{31} + (3,1,2) a_{13}a_{21}a_{32} + (3,2,1) a_{13}a_{22}a_{31} = $
+\bigskip \\ 
+$a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} 
 $\end{quote}
 
 \section{Vettori}
@@ -175,7 +180,7 @@ I vettori possono essere considerati delle matrici:
 $\vec{v}(1,2,3) =\left[\begin{matrix} 1 & 2 & 3\end{matrix}\right]
 $\end{quote}
 \subsection{Spazi vettoriali}
-Uno spazio vettoriale è una struttura algebrica composta da un campo (i cui elementi sono detti scalri), un insieme (i cui elemeti sono detti vettori) e due operazioni, somma e moltiplicazione.
+Uno spazio vettoriale è una struttura algebrica composta da un campo (i cui elementi sono detti scalari), un insieme (i cui elemeti sono detti vettori) e due operazioni, somma e moltiplicazione.
 \\ Spazi vettoriali sono il piano cartesiano e il piano a tre dimensioni:
 \\
 
