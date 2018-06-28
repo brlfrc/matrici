@@ -23,11 +23,11 @@
 \section{Introduzione}
 
 La matematica è il linguaggio con cui la fisica si esprime, ogni teorema e ogni legge sono enunciati attraverso i simboli che i matematici hanno creato.
-\\Classicamente la branca della matematica di cui si avvale i fisici era l’analisi. Il grande padre della fisica, Isaac Newton, prima di creare le sue leggi, riformula le nozioni matematiche del tempo introducendo concetti rivoluzionari nel campo dell’analisi. Anche la cinematica, la termologia e l’elettromagnetismo sono teorie che si basano su questa branca della matematica.
+\\Classicamente la branca della matematica di cui si avvale i fisici era l’analisi. Il grande padre della fisica, Isaac Newton, prima di creare le sue leggi, riformula le nozioni matematiche del tempo introducendo concetti rivoluzionari nel campo dell’analisi,come quello di derivata per calcolare la velocita instantanea.Anche la cinematica, la termologia e l’elettromagnetismo sono teorie che si basano su questa branca della matematica.
 \\Negli ultimi anni dell’Ottocento e nei primi del Novecento la fisica attraversa un momento di grande rinnovamento e vengono elaborate teorie rivoluzionare capaci di cambiarla per sempre. Nasce l’idea di \textit{quanto} con Max Planck, la \textit{relatività} di Eistein e la \textit{meccanica matriciale} di Heisenberg e Born.
 \\La grande intuizione di questi ultimi due scienziati è quella di cambiare radicalmente il punto di vista da cui si guarda il mondo della fisica, sfruttando una diversa branca della matematica: l'algebra lineare. Infatti la teoria che viene sviluppata sull’isola di Helgoland si basa sulle matrici, per questa ragione viene chiamata \textit{meccanica matriciale}.
 \\
-\\Concludo questa breve introduzione dicendo che personalmente trovo molto affascinante che un gruppo di numeri all'apparenza disposti apparentemente in modo casuali siano in grado di descrivere con tanta cura la realtà. Il mistero diventa ancora più interessante se si considera il fatto che teorie fisiche sfruttano matrici che coinvolgono numeri immaginari ottenendo risultati ottimi (un esempio sono le matrici che Pauli sfrutta per completare il suo \textit{principio di sovrapposizione}).
+\\Concludo questa breve introduzione dicendo che personalmente trovo molto affascinante che un gruppo di numeri all'apparenza disposti apparentemente in modo casuale siano in grado di descrivere con tanta cura la realtà. Il mistero diventa ancora più interessante se si considera il fatto che teorie fisiche sfruttano matrici che coinvolgono numeri immaginari ottenendo risultati ottimi (un esempio sono le matrici che Pauli sfrutta per completare il suo \textit{principio di sovrapposizione}).
 
 \section{Le matrici}
 
@@ -39,7 +39,7 @@ Quello che intendo presentare è un primo approccio all’algebra lineare e in p
 \vspace*{\fill} 
 \begin{quote} 
 \centering 
-Una matrice è una successione di numeri disposti in colonna e in riga:
+Una matrice è una successione di numeri disposti in colonne e in righe:
 \bigskip \\
 $\left[\begin{matrix}a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a{22} & ... & a_{2n} \\ ... & ... & ... & ...\\ a_{m1} & a_{m2} & ... & a_{mn}\end{matrix}\right]
 $
@@ -163,7 +163,7 @@ gli elementi devono essere scelti in modo che un elemento, e uno solo, provenga 
 \\ Cerchiamo di chiarire attraverso due esempi e calcoliamo il determinante per matrici di ordine 2 e 3:
 \\
 \\ Determinante di $\left[\begin{matrix}a_{11} & a_{12} \\ a_{21} & a{22} \end{matrix}\right]
-= (1,2) a_{11} a_{22} + (2,1; una permutazione) a_{12}a_{21}= a_{11} a_{22} - a_{12}a_{21}
+= (1,2) a_{11} a_{22} + (2,1; \textit{una permutazione}) a_{12}a_{21}= a_{11} a_{22} - a_{12}a_{21}
 $
 \begin{quote} \centering
 Determinate di $\left[\begin{matrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{matrix}\right] =$
@@ -196,7 +196,7 @@ Per il piano a tre dimensioni:
 \begin{quote} \centering $ \vec{j}(1,0,0), \vec{i}(0,1,0), \vec{k}(0,0,1) $
 \end{quote}
 Questi vettori sono chiamati vettori base.
-\\Due vettori sono linearmente indipendeti se la loro combinazione lineare vale 0 se e solo se i coefficienti che moltiplicano i vettori sono nulli:
+\\Due vettori sono linearmente indipendenti se la loro combinazione lineare vale 0 se e solo se i coefficienti che moltiplicano i vettori sono nulli:
 $\vec{v_{1}}$ e $\vec{v_{2}} $ sono linearmente indipendenti alllora $\alpha\vec{v_{1}}*\beta\vec{v_{2}}=0$ solo per $\alpha=\beta=0 $.
 \\ un esempio sono i vettori (2,3,5) e (3,7,8) \\
 \[\begin{cases}
@@ -205,7 +205,7 @@ $\vec{v_{1}}$ e $\vec{v_{2}} $ sono linearmente indipendenti alllora $\alpha\vec
 5\alpha + 8\beta=0
 \end{cases}
 \]
-Unica soluzione $\alpha=\beta=0$ e quindi i due vettori sono linearmente indipendeti.
+Unica soluzione $\alpha=\beta=0$ e quindi i due vettori sono linearmente indipendenti.
 \\
 \subsection{Spazi e matrici}
 Gli spazi vettoriali possono essere definiti anche con le matrici.
@@ -340,7 +340,7 @@ Allora possiamo concludere che una matrice di ordine due descrive le rotazioni n
 \section{Conclusioni}
 Per concludere consideriamo uno spazio vettoriale $R^4$ descritto da quattro matrici base.
 \\Questo campo raccoglie i vettori di quattro dimensioni, chiamati quaternioni. Essi furono inventati dal matematico inglese Hamilto.
-\\In particolare un quaternione puro è in grado di descrivere una rotazione nello spazio $R^3$, come un numero immaginario descrive una rotazione nello spazio $R^2$. Per questa ragione i quaternioni vennero sfruttati da Wolfgang Pauli per descrivere i vettori di spin e formulare il suo principio di esclusione.
+\\In particolare un quaternione puro è in grado di descrivere una rotazione nello spazio $R^3$, come un numero immaginario descrive una rotazione nello spazio $R^2$.Per questa ragione i quaternioni vennero sfruttati da Wolfgang Pauli per descrivere i vettori di spin e formulare il suo principio di esclusione.
 \\
 Le matrici di Pauli sono:
 \begin{quote} \centering$\sigma_{x}=\left[\begin{matrix}0&1\\ 1&0 \end{matrix}\right] \sigma_{y}=\left[\begin{matrix}0&-\textit{i}\\ \textit{i}&0 \end{matrix}\right] \sigma_{z}=\left[\begin{matrix}1&0\\ 0&-1 \end{matrix}\right]
